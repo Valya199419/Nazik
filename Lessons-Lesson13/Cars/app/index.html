@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- for icons__>
+<!-- for bootstrap 4 start-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- for bootstrap 4 end-->
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body style='background-image: url("cars/carsImage/redFerrari5.jpg");background-repeat: no-repeat;height: 100%;background-size: cover'>
+
+
+
+
+  <header>
+
+      <div class="row  bg-dark " ng-show="!showDiv">
+                <div class="col-sm-2 row"><a href="https://account.envato.com/" style="text-decoration: none;margin-left:15px;"><p class="EnvatoMarket"> <img src="images/envato-icon-transparent.png" style="height: 20px;width: 20px;">envato<span style="color:#558000">market</span></p></a></div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-2 my-auto"><a class="btn btn-success btn-sm" href="#" role="button" style="margin-left: 150px;">Buy Now</a></div>
+        <div class="col-sm-2" style="float:right;"> <p class="RemoveFrame"><i class="fa fa-close" style="color:white" ng-click="showDiv =! showDiv"></i> Remove Frame</p></div>
+      </div>
+
+      <div class="row firstDivInHeader2" >
+            <div class="col-sm-6">
+              <p> <i class="fa fa-map-marker mt-2" style="font-size:15px"></i><b> AUTOSHOP</b><span style="font-size:15px;"> - 123 HOLDING, BUSAN,      KOREA</span></p>
+            </div>
+            <div class="col-sm-1 whiteRedLink">
+              <a  href="#!/admin">ADMIN PAGE</a>
+            </div>
+            <div class="col-sm-1 whiteRedLink">
+              <a  href="#!/">WISHLIST(0)</a>
+            </div>
+            <div class="col-sm-1 whiteRedLink">
+              <a  href="#!/">CHECKOUT</a>
+            </div>
+            <div class="col-sm-1" >
+              <i class="fa fa-shopping-basket zambyux" ng-mouseover="showDetails = !showDetails" ng-mouseleave=showDetails=!showDetails></i><sup style="border:5px solid red;border-radius: 999em;background-color:red;"><b>2</b></sup>
+
+            </div>
+      </div>
+    <!-- show-hide div gnumneri list skizb -->
+    <div  ng-show="showDetails" style="position: absolute;
+    z-index: 1000000000;
+  width: 15%;
+  height: 30%;
+  top:15%;
+  left:80%;"><img src="images/divWithZ-index.jpg" style="height: 300px;width:250px;"></div>
+    </div>
+
+    <div class="container" >
+      <div class="row  " >
+        <div class="col-sm-6"></div>
+
+        <div class="col-sm-5" id="trapezoid">
+          <h6 style="color:white;padding-top: 13px;">Need support? Call us:&nbsp <span><b> <i class="fa fa-phone" style="font-size:16px"></i> 0123-456-789</b></span></h6>
+        </div>
+
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+
+    <div class="container blackSexan" >
+      <div class="row">
+        <div class="col-sm-2"><img src=images/AvtoShopLogo.png style="height: 70px;width: 150px"></div>
+        <div class="col-sm-10 " id="Sexan">
+          <div class="row"  >
+          <div class="whiteRedLink" style="padding-top: 20px;"><a  href="#!/home">HOME</a></div>
+          <div class="col-sm-1" ></div>
+          <div class="whiteRedLink" style="padding-top: 20px;"><a   href="#!/cars  ">CARLISTING</a></div>
+          <div class="col-sm-1"></div>
+          <div class="whiteRedLink" style="padding-top: 20px;"><a  href="#!/product">PRODUCT</a></div>
+          <div class="col-sm-1"></div>
+          <div class="whiteRedLink" style="padding-top: 20px;"><a  href="#!/pages">PAGES</a></div>
+          <div class="col-sm-1"></div>
+          <div class="whiteRedLink" style="padding-top: 20px;"><a  href="#!/contact">CONTACT US</a></div>
+            <div class="col-sm-1"></div>
+
+            <div class="row" style="padding-top: 10px;" >
+              <input  type="search" value="Search..." style="background-color:#262626; border:1px solid #262626;width: 140px;height:46px;color:lightgray;"  >
+
+                <div style="background-color:#262626; border:1px solid #262626;width: 20px;height:50px;color:white;">
+                <i class="fa fa-search" style="margin-top: 15px;"></i>
+                </div>
+                </div>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="background-color: white;padding:10px;">
+      <div class="container">
+      <div class="row" >
+
+        <div class="pointer  pointerTun" ><i class="fa fa-home" style="font-size:15px;    margin-left: 10px;margin-top: 10px;"></i></div>
+
+
+        <div class=" pointer pointerProduct"   ><p style="margin-left: 30px;
+    margin-top: 5px;color: #404040;">Product</p></div>
+
+
+        <div class=" pointer pointerTyres" ><p style="margin-left: 30px;
+    margin-top: 5px;color: #404040;">Tyres & Wheels</p></div>
+
+
+
+        <button style="height: 50px;margin-left: 500px;color: white;background-color: red;"><i class="fa fa-upload" style="color:white"></i>&nbsp UPLOAD YOUR VEHICLE</button>
+
+      </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+<footer>
+  <div class="container" style= "background-color:#1a1a1a ">
+    <div class="row">
+      <div class="col-sm-4 text-white" style="padding-bottom: 20px;">
+        <h3 style="margin-bottom:15px ">COMPANY INFO</h3>
+        <div class="row"style="margin-bottom:25px">
+          <div class="col-sm-4"style="border-bottom: solid 2px red"></div><div class="col-sm-7"  style="border-bottom: solid 2px gray"></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut .</p>
+        <p><p class="fa fa-signal"> 123 Holding, Busan, Korea</p></p>
+        &#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;
+        <p> <p class="fa fa-phone"> 0123-456-789 </p></p>
+        &#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;
+        <p><p class="fa fa-envelope-o" aria-hidden ="true"> Support@htmlcs.com</p></p>
+        &#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;
+        <i class="fa fa-globe" style="color:lightgray"> http://www.ndktheme.com</i>
+      </div>
+      <div class="col-sm-4 text-white">
+        <h3 style="margin-bottom:15px ">NEWSLETTER</h3>
+        <div class="row"style="margin-bottom:25px">
+          <div class="col-sm-4"style="border-bottom: solid 2px red"></div><div class="col-sm-7"  style="border-bottom: solid 2px gray"></div>
+        </div>
+        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut</p>
+        <div class="form-group">
+          <input type="email"  id="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn" style="background-color: red"><h6><b>SUBSCRIBE</b></h6></button>
+        </div>
+      </div>
+      <div class="col-sm-4 text-white">
+        <h3 style="margin-bottom:15px ">QUICK LINK</h3>
+        <div class="row" style="margin-bottom:25px">
+          <div class="col-sm-4"style="border-bottom: solid 2px red"></div><div class="col-sm-7"  style="border-bottom: solid 2px gray"></div>
+        </div>
+        <p>&gt Privacy Policy</p>
+        &#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;
+        <p>&gt Community</p>
+        &#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;
+        <p>&gt Blog</p>
+        &#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;
+        <p>&gt Guide use</p>
+        &#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;&#x2212;
+        <p>&gt Our Servces</p>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container ">
+    <div class="row" style="background-color: black">
+
+        <div class="col-sm-6">
+          <h5 style="color:lightgray ">© 2016 DESIGNED BY <b style="color:red">T3THEME</b>. ALL RIGHTS RESERVED</h5>
+        </div>
+      <div class="col-sm-3"></div>
+<div class="col-sm-3">
+            <i class= "fa fa-facebook"></i>
+            <i class= "fa fa-google"></i>
+            <i class= "fa fa-youtube"></i>
+            <i class= "fa fa-facebook"></i>
+</div>
+
+    </div>
+  </div>
+</footer>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="cars/cars.js"></script>
+  <script src="carOnclick/carOnclick.js"></script>
+  <script src="admin/admin.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
+
+
+<!--  http://angular-doc.herokuapp.com/ui/
+https://www.dotnettricks.com/learn/nodejs/creating-a-mean-stack-spa-with-crud-operations
+https://techbrij.com/mongodb-angularjs-nodejs-sailsjs-crud-bower
+-->

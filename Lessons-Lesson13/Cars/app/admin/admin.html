@@ -1,0 +1,131 @@
+<div class="container">
+    <h2 style="color:white">Admin page</h2>
+    <div style="margin-bottom: 30px">
+    <a class="btn btn-btn-primary btn-lg" href="" role="button" style="background-color: white;color: dodgerblue"><b>For insert new car please click button Create</b></a>
+    <a class="btn btn-primary btn-lg" href="" role="button" data-toggle="modal" data-target="#myModal">Create</a>
+    </div>
+<!--    <div >
+    <h4 style="color:white">Input car image</h4>
+        <form action = "http://localhost:8081/file_uploadPage" method = "POST" enctype="multipart/form-data">
+        Picture:<input type="file" name="inputCarPictureName" />
+        <input type = "submit" value = "Upload File" />
+        </form>
+    </div>-->
+
+    <div>
+        <table border="3" style="background-color:lightcyan">
+        <tr style="background-color: dodgerblue; color: white">
+            <td class="smallText1">Number</td>
+            <td class="smallText1">ID</td>
+            <td class="smallText1">Year</td>
+            <td class="smallText1">Make</td>
+            <td class="smallText1">Model</td>
+            <td class="smallText1">Image</td>
+            <td class="smallText1">Condition</td>
+            <td class="smallText1">Body</td>
+            <td class="smallText1">Tranmission</td>
+            <td class="smallText1">Use Way</td>
+            <td class="smallText1">Price</td>
+            <td class="smallText1" >Stars</td>
+            <td class="smallText1">Description</td>
+            <td class="smallText1" colspan="2">Actions</td>
+        </tr>
+        <tr ng-repeat="x in cars">
+            <td class="smallText">{{ x.number }}</td>
+            <td class="smallText">{{ x._id }}</td>
+            <td class="smallText">{{ x.year }}</td>
+            <td class="smallText">{{ x.make }}</td>
+            <td class="smallText">{{ x.model }}</td>
+            <td class="smallText"><img src="{{ x.image }}" style="height: 80px;width:130px;"></br>{{ x.image }}</td>
+            <td class="smallText">{{ x.condition }}</td>
+            <td class="smallText">{{ x.body }}</td>
+            <td class="smallText">{{ x.tranmission }}</td>
+            <td class="smallText">{{ x.useWay }}</td>
+            <td class="smallText">{{ x.price }}</td>
+            <td class="smallText">{{ x.stars }}</td>
+            <td class="smallText">{{ x.description }}</td>
+            <td><a class="btn btn-warning btn-sm"  role="button" ng-click="editUser(x._id)" data-toggle="modal" data-target="#myModal">Edit</a></td>
+            <td><a class="btn btn-danger btn-sm" role="button" ng-click="deleteCar(x._id)">Delete</a></td>
+        </tr>
+        </table>
+    </div>
+
+
+    <!-- Button to Open the Modal
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+    </button>
+-->
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form name="myForm" >
+
+                        <div class="form-group">
+                            <label for="condition">Condition:</label>
+                            <input ng-model="car.condition" type="text" class="form-control" id="condition" placeholder="Enter condition" name="condition">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="body">Body:</label>
+                            <input ng-model="car.body" type="text" class="form-control" id="body" placeholder="Enter Body" name="body">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="make">Make:</label>
+                            <input ng-model="car.make" type="text" class="form-control" id="make" placeholder="Enter Make" name="make">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="model">Model:</label>
+                            <input  ng-model="car.model" type="text" class="form-control" id="model" placeholder="Enter Model" name="model">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="year">Year:</label>
+                            <input ng-model="car.year" type="text" class="form-control" id="year" placeholder="Enter Year" name="year">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="transmission">Tranmission:</label>
+                            <input ng-model="car.transmission" type="text" class="form-control" id="transmission" placeholder="Enter Tranmission" name="transmission">
+                        </div>
+
+                        <!-- <div ng-show="showme=true"> -->
+                        <button ng-click="create()"  class="btn btn-primary">Create</button>
+                        <button ng-click="update()" class="btn btn-warning">Update</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--
+<a ui-sref="edit({id:user._id})">Edit</a> |
+<a href="#" ng-click="deleteUser(user._id)">Delete</a>
+-->
+
+
+
+
+
+
+

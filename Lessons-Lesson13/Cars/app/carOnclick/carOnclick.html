@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div  class="row" style= "background-color:#f2f2f2" >
+        <div class="col-sm-7" style= "padding:15px;" >
+            <img src="{{oneCar.image}}" style="width:600px;height:400px;">
+        </div>
+
+        <div class="col-sm-5" style= "padding:20px;">
+            <div>
+                <h2>{{oneCar.make}}-{{oneCar.model}}</h2>
+
+            </div>
+            <div ><img src="{{oneCar.stars}}" style="width:70px;height:13px;">{{oneCar.number}}</div>
+            <h3 style="color:#cc3333">{{oneCar.price |  currency: "$" : 0}}</h3>
+            <p style="color:gray;">{{oneCar.description}}</p>
+
+            <div class="row">
+
+                <div  style= "background-color:#d9d9d9; padding: 5px 10px ;margin-right:1px; "><h6 style= "color:#404040; "><i class="fa fa-clock-o" style="font-size:15px;color:gray"></i> {{oneCar.year}}</h6></div>
+
+
+                <div  style= "background-color:#d9d9d9; padding: 5px 10px ;margin-right:1px;"><h6 style= "color:#404040;"><i class="fa fa-tachometer" style="font-size:15px;color:gray"></i> {{oneCar.tranmission}}</h6></div>
+
+                <div style= "background-color:#d9d9d9; padding: 5px 10px ;margin-right:1px;"><h6 style= "color:#404040;"><i class="fa fa-road" style="font-size:15px;color:gray"></i> {{oneCar.useWay}}</h6></div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+

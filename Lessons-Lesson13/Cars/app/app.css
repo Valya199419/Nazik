@@ -1,0 +1,234 @@
+/* app css stylesheet */
+#CarNameLink{
+color: red;
+font-size: 27px;
+}
+.paginationRow{
+  padding:20px 20px;
+}
+.pagination{
+  cursor: pointer;
+  margin-left:2px;
+  padding:10px 10px;
+  border:2px solid darkgray;
+  color:cadetblue;
+}
+.pagination h5{
+  margin-left: 20px;
+  margin-right: 10px;}
+
+.RemoveFrame {
+  color: gray;
+  font-size: 15px;
+  line-height: 14px;
+  height: 75px;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.EnvatoMarket {font-size: 30px;
+  line-height: 14px;
+  height: 75px;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;}
+
+.firstDivInHeader2 {
+  padding: 5px;
+  text-align: center;
+  background: black;
+  color: white;
+  margin-bottom: 35px;
+}
+/* unvisited link
+
+.whiteRedLink:link {
+  color: white;
+}
+ visited link
+
+.whiteRedLink:visited {
+  color: gray;
+}*/
+
+/* mouse over link */
+
+.whiteRedLink a {
+  color: white;
+}
+.whiteRedLink a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+
+#trapezoid {
+  border-bottom: 50px solid #cc0000;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  height: 0;
+  width: 500px;
+ ;
+}
+#sexanLeft90{
+  border-bottom: 50px solid #F5F5F5;
+  border-right: 70px solid transparent;
+  height: 0;
+  width: 250px;
+}
+
+#Sexan {
+  border-bottom: 70px solid black;
+  border-left: 70px solid transparent;
+  height: 0;
+  width: 1000px;
+}
+
+.blackSexan {margin-bottom: 20px;}
+
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid red;
+  border-bottom: 50px solid transparent;
+}
+.zambyux:hover {
+  color: red;
+}
+
+.pointerTun {
+  margin-right: 20px;
+  width: 30px;
+  height: 40px;
+  position: relative;
+  background: #F5F5F5;
+
+}
+
+.pointerTun:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.pointerProduct{
+  margin-right: 20px;
+  width: 100px;
+  height: 40px;
+  position: relative;
+  background: #F5F5F5;
+  color:black;
+}
+.pointerProduct:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.pointerTyres{
+  color:black;
+  margin-right: 20px;
+  width: 150px;
+  height: 40px;
+  position: relative;
+  background: #F5F5F5;
+}
+.pointerTyres:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.pointer:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #F5F5F5;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.selectCarParametrs{
+  height: 50px;
+  width: 250px;
+}
+
+.selectBoxesForm {
+background-color: red;
+padding: 20px 40px;}
+
+
+/* Footer
+.footer {
+
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+
+
+}
+.footerhome {
+
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  border-radius: 70px 20px;
+
+
+}*/
+
+.footer > h2 {
+  font-size: 40px;}
+
+p{
+  color:lightgray;
+}
+h5{
+  color:white;
+  margin-bottom:-19px;
+}
+
+
+.fa-facebook {
+  background: #0000;
+  margin-right:30px;
+}
+.fa-youtube {
+  background:#0000;
+  margin-right:30px;
+}
+
+.fa-google {
+  background:#0000;
+  margin-right:30px;
+}
+
+.smallText {
+  font-size:10px;
+}
+.smallText {
+  font-size:11px;
+}
